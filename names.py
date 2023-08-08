@@ -20,7 +20,7 @@ try:
         elif a in ("-n", "--Number"):
             number = int(v)
 except getopt.error as err:
-    print(str(err))
+    print(err)
 
 print('Reading the file')
 names = pd.read_csv("archive/NationalNames.csv")
